@@ -7,7 +7,8 @@
 }
 
 body {
-    margin: 2rem 15rem;
+    margin: 2rem 16rem;
+    overflow-y: hidden;
 }
 
 .generalContainer {
@@ -19,25 +20,60 @@ body {
     width: 30%;
 }
 
+.logo {
+    width: 6rem;
+}
+
 .navList {
     display: flex;
     flex-direction:column;
     list-style: none;
-    text-align: center;
     font-family: 'Bitter', serif;
     font-size: 40px;
+    font-weight: 800;
 }
 
 .navListAnchor {
     text-decoration: none;
     cursor: pointer;
+    color: #746f72;
+}
+
+.separatorUl {
+    width: 300px;
+}
+
+.worldMap {
+    width: 20rem;
 }
 
 .rightColumn {
     width: 70%;
+    margin-left: 1rem;
 }
 
-/* .worldAndText {
-    display: flex;
-    flex-direction: column;
-} */
+.worldAndText {
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+
+.aboutUsTitle {
+    color: lightgray;
+    font-size: 60px;
+    font-family: 'Bitter', serif;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+
+.imgWorldArrows {
+    width: 43rem;
+}
+
+.textContainer {
+    width: 58%;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
