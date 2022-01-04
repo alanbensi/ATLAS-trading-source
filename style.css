@@ -8,7 +8,6 @@
 
 body {
     margin: 2rem 16rem;
-    overflow-y: hidden;
 }
 
 .generalContainer {
@@ -52,20 +51,20 @@ body {
     margin-left: 1rem;
 }
 
-.worldAndText {
+.rightSection {
     margin-top: 6rem;
     margin-left: 2rem;
 }
 
-.aboutUsTitle {
+.titles {
     color: lightgray;
     font-size: 60px;
     font-family: 'Bitter', serif;
     font-weight: 800;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
-.imgWorldArrows {
+.rightSection_Img {
     width: 43rem;
 }
 
@@ -75,5 +74,11 @@ body {
 
 .text {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
+}
+
+.listOurServices {
+    margin-left: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
