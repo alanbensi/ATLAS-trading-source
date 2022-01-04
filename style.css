@@ -10,6 +10,10 @@ body {
     margin: 2rem 16rem;
 }
 
+/* GENERAL OF ALL PAGES */
+
+/* LEFT COLUMN  */
+
 .generalContainer {
     display: flex;
     flex-direction: row;
@@ -45,6 +49,8 @@ body {
 .worldMap {
     width: 20rem;
 }
+
+/* RIGHT COLUMN  */
 
 .rightColumn {
     width: 70%;
@@ -82,4 +88,87 @@ body {
     margin-left: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+}
+
+/* CONTACT US */
+
+.bodyContactUs {
+    margin: 2rem 13rem;
+}
+.containerAddressContactUs {
+    margin-left: 1rem;
+    position: relative;
+}
+
+.containerImg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sideColorBar {
+    width: 1.1rem;
+}
+
+.textContactUs {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+.containerForm {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.containerFormLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerFormRight {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.labelForm {
+    width: 100%;
+    margin-bottom: 0.1rem;
+    font-family: 'Bitter', serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.inputForm, .buttonSend {
+    width: 80%;
+    background-color: lightgray;
+    border: none;
+    height: auto;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+.inputForm:focus {
+    outline: none;
+    font-family: 'Bitter', serif;
+}
+
+.buttonSend {
+    background-color: darkseagreen;
+    padding: 1rem;
+    margin-top: 2.1rem;
+    cursor: pointer;
+}
+
+.buttonSend:hover {
+    background-color: seagreen;
+    transition: 1s;
+}
+
+.textAreaForm {
+    height: 5rem;
+    resize: none;
 }
