@@ -16,7 +16,7 @@ body {
     font-size: 32px;
     position: absolute;
     left: 0; 
-    top: 190px;
+    top: 109px;
     color: royalblue;
 }
 
@@ -24,7 +24,7 @@ body {
     font-size: 32px;
     position: absolute;
     left: 0; 
-    top: 238px;
+    top: 157px;
     color: cadetblue;
 }
 
@@ -32,7 +32,7 @@ body {
     font-size: 32px;
     position: absolute;
     left: 0; 
-    top: 286px;
+    top: 205px;
     color: indianred;
 }
 
@@ -40,7 +40,7 @@ body {
     font-size: 32px;
     position: absolute;
     left: 0; 
-    top: 334px;
+    top: 253px;
     color: darkseagreen;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .leftColumn {
-    width: 30%;
+    width: 32%;
 }
 
 .navBar{
@@ -62,7 +62,11 @@ body {
 }
 
 .logo {
-    width: 6rem;
+    width: 10rem;
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
 }
 
 .separatorUl {
@@ -118,7 +122,7 @@ body {
 }
 
 .rightSection {
-    margin-top: 6rem;
+    margin-top: 5rem;
     margin-left: 2rem;
 }
 
@@ -233,7 +237,7 @@ body {
 }
 
 
-/* MEDIA QUERYS  */
+/* MEDIA QUERYS CELULARES */
 
 @media only screen and (max-width: 480px) {
     body{
@@ -246,9 +250,6 @@ body {
         width: 100%;
     }
     .logo {
-        width: 4rem;
-        position: relative;
-        left: 50%;
         transform: translate(-50%,20px);
     }
     .separatorUl {
@@ -318,7 +319,87 @@ body {
     }
     .labelForm {
         font-size: 12px;
-    }
-    
+    }    
 }
 
+/* MEDIA QUERYS TABLET */
+
+@media (min-width:481px) and (max-width: 1400px) {
+    body{
+        margin: 0;
+    }
+    .leftColumn {
+        width: 100%;
+    }
+    .logo {
+        transform: translate(-50%,20px);
+    }
+    .separatorUl {
+        display: none;
+    }
+    .navList {
+        font-size: 30px;
+        margin: 0;
+        margin-top: 2rem;
+    }
+    .navList li {
+        text-align: center;
+    }
+    .containerArrowUl {
+        display: none;
+    }
+    .sectionWorldMap, .containerContactUsResponsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .containerIcons {
+        align-items: center;
+    }
+    .worldMap {
+        width: 20rem;
+        margin-top: 1.5rem;
+    }
+    .rightColumn{
+        margin: 0;
+        width: 100%;
+    }
+    .rightSection {
+        margin: 0;
+        margin-top: 1.5rem;
+    }
+    .titles {
+        font-size: 55px;
+        margin: 0;
+        text-align: center;
+    }
+    .rightSection_Img {
+        width: 20rem;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 1.5rem;    
+    }
+    .textContainer {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .text {
+        text-align: center;
+    }
+    .listOurServices {
+        width: 80%;
+        padding: 1rem;
+    }
+    .containerImg {
+        display: none;
+    }
+    .textContactUs {
+        text-align: center;
+        margin: 0;
+    }
+    .labelForm {
+        font-size: 12px;
+    } 
+}
