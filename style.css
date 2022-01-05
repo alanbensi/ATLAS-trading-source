@@ -60,13 +60,13 @@ body {
 .navBar{
     position: relative;
 }
+.containerLogo {
+    display: flex;
+    justify-content: center;
+}
 
 .logo {
     width: 10rem;
-    position: relative;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%);
 }
 
 .separatorUl {
@@ -112,6 +112,10 @@ body {
 
 .worldMap {
     width: 20rem;
+    margin-top: 1rem;
+}
+.textMb {
+    margin-top: 1rem;
 }
 
 /* RIGHT COLUMN  */
@@ -136,6 +140,7 @@ body {
 
 .rightSection_Img {
     width: 43rem;
+    margin-bottom: 1rem;
 }
 
 .textContainer {
@@ -239,7 +244,7 @@ body {
 
 /* MEDIA QUERYS CELULARES */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 700px) {
     body{
         margin: 0;
     }
@@ -250,7 +255,7 @@ body {
         width: 100%;
     }
     .logo {
-        transform: translate(-50%,20px);
+        margin-top: 1.5rem;
     }
     .separatorUl {
         display: none;
@@ -304,6 +309,9 @@ body {
         margin: 2rem 0;
     }
     .text {
+        padding: 10px;
+    }
+    .textMb {
         text-align: center;
     }
     .listOurServices {
@@ -324,15 +332,9 @@ body {
 
 /* MEDIA QUERYS TABLET */
 
-@media (min-width:481px) and (max-width: 1400px) {
+@media (min-width:701px) and (max-width: 1400px) {
     body{
-        margin: 0;
-    }
-    .leftColumn {
-        width: 100%;
-    }
-    .logo {
-        transform: translate(-50%,20px);
+        margin: 2rem 3rem;
     }
     .separatorUl {
         display: none;
@@ -356,26 +358,25 @@ body {
     }
     .containerIcons {
         align-items: center;
+        width: 110%;
     }
     .worldMap {
         width: 20rem;
         margin-top: 1.5rem;
     }
     .rightColumn{
-        margin: 0;
-        width: 100%;
+        margin-left: 4rem;
     }
     .rightSection {
         margin: 0;
         margin-top: 1.5rem;
     }
     .titles {
-        font-size: 55px;
         margin: 0;
         text-align: center;
     }
     .rightSection_Img {
-        width: 20rem;
+        width: 80%;
         position: relative;
         left: 50%;
         transform: translate(-50%);
@@ -385,7 +386,7 @@ body {
         width: 100%;
         margin: 2rem 0;
     }
-    .text {
+    .textMb {
         text-align: center;
     }
     .listOurServices {
@@ -400,6 +401,6 @@ body {
         margin: 0;
     }
     .labelForm {
-        font-size: 12px;
+        font-size: 15px;
     } 
 }
