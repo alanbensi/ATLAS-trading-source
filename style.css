@@ -7,7 +7,41 @@
 }
 
 body {
-    margin: 2rem 16rem;
+    margin: 2rem 13rem;
+}
+
+/* ARROW NAVBAR  */
+
+.arrowUlIndex {
+    font-size: 32px;
+    position: absolute;
+    left: 0; 
+    top: 190px;
+    color: royalblue;
+}
+
+.arrowUlOurServices {
+    font-size: 32px;
+    position: absolute;
+    left: 0; 
+    top: 238px;
+    color: cadetblue;
+}
+
+.arrowUlProducts {
+    font-size: 32px;
+    position: absolute;
+    left: 0; 
+    top: 286px;
+    color: indianred;
+}
+
+.arrowUlContactUs {
+    font-size: 32px;
+    position: absolute;
+    left: 0; 
+    top: 334px;
+    color: darkseagreen;
 }
 
 /* GENERAL OF ALL PAGES */
@@ -20,11 +54,19 @@ body {
 }
 
 .leftColumn {
-    width: 30%;
+    width: 35%;
+}
+
+.navBar{
+    position: relative;
 }
 
 .logo {
     width: 6rem;
+}
+
+.separatorUl {
+    width: 350px;
 }
 
 .navList {
@@ -34,6 +76,7 @@ body {
     font-family: 'Bitter', serif;
     font-size: 40px;
     font-weight: 800;
+    margin-left: 3.3rem;
 }
 
 .navListAnchor {
@@ -42,8 +85,20 @@ body {
     color: #746f72;
 }
 
-.separatorUl {
-    width: 300px;
+.navListAboutUs, .aboutUsHv:hover {
+    color: royalblue;
+}
+
+.navListOurServices, .ourServicesHv:hover {
+    color: cadetblue;
+}
+
+.navListProducts, .productsHv:hover {
+    color: indianred;
+}
+
+.navListContactUs, .contactUsHv:hover {
+    color: darkseagreen;
 }
 
 .worldMap {
@@ -160,6 +215,7 @@ body {
     background-color: darkseagreen;
     padding: 1rem;
     margin-top: 2.1rem;
+    margin-left: 2px;
     cursor: pointer;
 }
 
