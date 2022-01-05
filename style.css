@@ -54,7 +54,7 @@ body {
 }
 
 .leftColumn {
-    width: 35%;
+    width: 30%;
 }
 
 .navBar{
@@ -101,6 +101,11 @@ body {
     color: darkseagreen;
 }
 
+.containerIcons {
+    display: flex;
+    flex-direction: column;
+}
+
 .worldMap {
     width: 20rem;
 }
@@ -131,12 +136,12 @@ body {
 
 .textContainer {
     width: 58%;
+    margin-left: 0.2rem;
 }
 
 .text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    margin-left: 0.2rem;
 }
 
 .listOurServices {
@@ -147,9 +152,6 @@ body {
 
 /* CONTACT US */
 
-.bodyContactUs {
-    margin: 2rem 13rem;
-}
 .containerAddressContactUs {
     margin-left: 1rem;
     position: relative;
@@ -176,6 +178,7 @@ body {
     margin-top: 1rem;
     margin-left: 1rem;
 }
+
 .containerFormLeft {
     width: 50%;
     display: flex;
@@ -221,10 +224,101 @@ body {
 
 .buttonSend:hover {
     background-color: seagreen;
-    transition: 1s;
+    transition: 0.8s;
 }
 
 .textAreaForm {
     height: 5rem;
     resize: none;
 }
+
+
+/* MEDIA QUERYS  */
+
+@media only screen and (max-width: 480px) {
+    body{
+        margin: 0;
+    }
+    .generalContainer {
+        flex-direction: column;
+    }
+    .leftColumn {
+        width: 100%;
+    }
+    .logo {
+        width: 4rem;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,20px);
+    }
+    .separatorUl {
+        display: none;
+    }
+    .navList {
+        font-size: 30px;
+        margin: 0;
+        margin-top: 2rem;
+    }
+    .navList li {
+        text-align: center;
+    }
+    .containerArrowUl {
+        display: none;
+    }
+    .sectionWorldMap, .containerContactUsResponsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .containerIcons {
+        align-items: center;
+    }
+    .worldMap {
+        width: 20rem;
+        margin-top: 1.5rem;
+    }
+    .rightColumn{
+        margin: 0;
+        width: 100%;
+    }
+    .rightSection {
+        margin: 0;
+        margin-top: 1.5rem;
+    }
+    .titles {
+        font-size: 55px;
+        margin: 0;
+        text-align: center;
+    }
+    .rightSection_Img {
+        width: 20rem;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 1.5rem;    
+    }
+    .textContainer {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .text {
+        text-align: center;
+    }
+    .listOurServices {
+        width: 80%;
+        padding: 1rem;
+    }
+    .containerImg {
+        display: none;
+    }
+    .textContactUs {
+        text-align: center;
+        margin: 0;
+    }
+    .labelForm {
+        font-size: 12px;
+    }
+    
+}
+
