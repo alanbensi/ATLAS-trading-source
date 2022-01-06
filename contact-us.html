@@ -7,6 +7,30 @@
     <title>ATLAS TRADING SOURCE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Imagenes/logo.svg"  type="image/x-icon">
+    <!-- Emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_3nsy2EAOkTXh4X080vMah');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <div class="generalContainer">
@@ -68,37 +92,37 @@
                     </div>
                 </div>
                 <div>
-                    <form class="containerForm" action="">
+                    <form class="containerForm" id="contact-form">
                         <div class="containerFormLeft">
                             <label class="labelForm" for="address">Address (Mr/Ms)</label>
                             <input class="inputForm" type="text" name="address" id="inputAddress">
-                            <label class="labelForm" for="title">Title</label>
-                            <input class="inputForm" type="text" name="title" id="inputTitle">
+                            <label class="labelForm" for="user_title" >Title</label>
+                            <input class="inputForm" type="text" name="user_title" id="inputTitle">
                             <label class="labelForm" for="firstName">First name</label>
-                            <input class="inputForm" type="text" name="firstName" id="inputfirstName">
+                            <input class="inputForm" type="text" name="user_firstName" id="inputfirstName">
                             <label class="labelForm" for="lastName">Last name</label>
-                            <input class="inputForm" type="text" name="lastName" id="inputLastName">
+                            <input class="inputForm" type="text" name="user_lastName" id="inputLastName">
                             <label class="labelForm" for="companyOrganization">Company/Organization</label>
-                            <input class="inputForm" type="text" name="companyOrganization" id="inputCompanyOrganization">
+                            <input class="inputForm" type="text" name="user_companyOrganization" id="inputCompanyOrganization">
                             <label class="labelForm" for="street">Street</label>
-                            <input class="inputForm" type="text" name="street" id="inputStreet">
+                            <input class="inputForm" type="text" name="user_street" id="inputStreet">
                             <label class="labelForm" for="yourComment">Your Comment</label>
-                            <textarea class="inputForm textAreaForm" name="yourComment" id="textAreaYourComment" cols="50" rows="10"></textarea>
+                            <textarea class="inputForm textAreaForm" name="user_comment" id="textAreaYourComment" cols="50" rows="10"></textarea>
                         </div>
                         <div class="containerFormRight">
                             <label class="labelForm" for="Postal-code">Postal code</label>
-                            <input class="inputForm" type="text" name="Postal-code" id="inputPostalCode">
+                            <input class="inputForm" type="text" name="user_postalCode" id="inputPostalCode">
                             <label class="labelForm" for="cityProvince">City/Province</label>
                             <input class="inputForm" type="text" name="cityProvince" id="inputCityProvince">
                             <label class="labelForm" for="country">Country</label>
-                            <input class="inputForm" type="text" name="country" id="inputCountry">
+                            <input class="inputForm" type="text" name="user_country" id="inputCountry">
                             <label class="labelForm" for="telephone">Telephone</label>
-                            <input class="inputForm" type="text" name="telephone" id="inputTelephone">
+                            <input class="inputForm" type="text" name="user_telephone" id="inputTelephone">
                             <label class="labelForm" for="fax">Fax</label>
-                            <input class="inputForm" type="text" name="fax" id="inputFax">
+                            <input class="inputForm" type="text" name="user_fax" id="inputFax">
                             <label class="labelForm" for="email">Email</label>
-                            <input class="inputForm" type="text" name="email" id="inputEmail">
-                            <input class="buttonSend" type="button" value="Send">
+                            <input class="inputForm" type="text" name="user_email" id="inputEmail">
+                            <input class="buttonSend" type="submit" value="Send">
                         </div>
                     </form>
                 </div>
