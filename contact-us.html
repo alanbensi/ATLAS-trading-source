@@ -39,7 +39,7 @@
                 // these IDs from the previous steps
                 emailjs.sendForm('service_zrqfodz', 'template_w96357i', this)
                     .then(function() {
-                        console.log();
+                        cleanform();
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
