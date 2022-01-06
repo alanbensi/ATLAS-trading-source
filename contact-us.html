@@ -40,8 +40,18 @@
                 emailjs.sendForm('service_zrqfodz', 'template_w96357i', this)
                     .then(function() {
                         cleanform();
+                        Swal.fire(
+                        'Thank you for your message!',
+                        'we will get in touch shortly!',
+                        'success'
+                        );
                     }, function(error) {
                         console.log('FAILED...', error);
+                        Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong, Try again!',
+                        });
                     });
             });
         }
@@ -149,5 +159,6 @@
         <p class="text">© 2010 Trade the World. All Rights Reserved.</p>
     </footer>
     <script src="https://kit.fontawesome.com/a31a6b2861.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
