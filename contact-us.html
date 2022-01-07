@@ -15,6 +15,7 @@
             emailjs.init('user_3nsy2EAOkTXh4X080vMah');
         })();
     </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript">
         function cleanform(){
             document.getElementById("inputAddress").value = "";
@@ -38,23 +39,23 @@
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('service_zrqfodz', 'template_w96357i', this)
-                    .then(function() {
-                        cleanform();
-                        Swal.fire(
+                .then(function() {
+                    cleanform();
+                    Swal.fire(
                         'Thank you for your message!',
-                        'we will get in touch shortly!',
+                        'We will get in touch shortly!',
                         'success'
                         );
                     }, function(error) {
                         console.log('FAILED...', error);
                         Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Something went wrong, Try again!',
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong, Try again!',
                         });
                     });
-            });
-        }
+                });
+            }
     </script>
 </head>
 <body>
@@ -159,6 +160,5 @@
         <p class="text">© 2010 Trade the World. All Rights Reserved.</p>
     </footer>
     <script src="https://kit.fontawesome.com/a31a6b2861.js" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
