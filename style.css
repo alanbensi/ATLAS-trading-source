@@ -16,7 +16,7 @@ body {
     font-size: 32px;
     position: absolute;
     left: 0; 
-    top: 109px;
+    top: 107px;
     color: royalblue;
 }
 
@@ -24,7 +24,7 @@ body {
     font-size: 32px;
     position: absolute;
     left: 0; 
-    top: 157px;
+    top: 150px;
     color: cadetblue;
 }
 
@@ -32,7 +32,7 @@ body {
     font-size: 32px;
     position: absolute;
     left: 0; 
-    top: 205px;
+    top: 195px;
     color: indianred;
 }
 
@@ -40,7 +40,7 @@ body {
     font-size: 32px;
     position: absolute;
     left: 0; 
-    top: 253px;
+    top: 239px;
     color: darkseagreen;
 }
 
@@ -78,7 +78,7 @@ body {
     flex-direction:column;
     list-style: none;
     font-family: 'Bitter', serif;
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 800;
     margin-left: 3.3rem;
 }
@@ -139,8 +139,13 @@ body {
 }
 
 .rightSection_Img {
-    width: 43rem;
+    width: 40rem;
     margin-bottom: 1rem;
+}
+
+.ourServices__img, .products__img {
+    width: 40rem;
+    height: 18rem;
 }
 
 .textContainer {
@@ -164,16 +169,6 @@ body {
 .containerAddressContactUs {
     margin-left: 1rem;
     position: relative;
-}
-
-.containerImg {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.sideColorBar {
-    width: 1.1rem;
 }
 
 .textContactUs {
@@ -297,13 +292,17 @@ body {
         margin: 0;
         text-align: center;
     }
-    .rightSection_Img {
+    .rightSection_Img, .ourServices__img, .products__img {
         width: 20rem;
         position: relative;
         left: 50%;
         transform: translate(-50%);
         margin-top: 1.5rem;    
     }
+    .ourServices__img, .products__img {
+        height: 12rem;
+    }
+
     .textContainer {
         width: 100%;
         margin: 2rem 0;
@@ -375,7 +374,7 @@ body {
         margin: 0;
         text-align: center;
     }
-    .rightSection_Img {
+    .rightSection_Img, .ourServices__img, .products__img {
         width: 80%;
         position: relative;
         left: 50%;
@@ -403,4 +402,16 @@ body {
     .labelForm {
         font-size: 15px;
     } 
+}
+
+@media (min-width:701px) and (max-width: 1000px)  {
+    .products__img, .ourServices__img {
+        height: 12rem;
+    }
+}
+
+@media (min-width:1001px) and (max-width: 1400px)  {
+    .products__img, .ourServices__img {
+        height: 15rem;
+    }
 }
